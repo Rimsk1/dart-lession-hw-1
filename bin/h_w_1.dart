@@ -17,7 +17,7 @@ void main() {
 
   sumNumbers3(100);
   sumNumbers3(879);
-  sumNumbers3(2000);
+  sumNumbers3(289);
 }
 //1. В переменных q и w хранятся два натуральных числа. Создайте функцию,
 //      выводящую на экран результат деления q на w с остатком.
@@ -26,7 +26,7 @@ void main() {
 int division(final q, final w){//через return
   return q%w;
 }
-void division2(final q, final w){//с  выводом на текста и результата на экран
+void division2(final q, final w){//с  выводом текста и результата на экран
   final div2 = q~/w;
   final remainder = q%w;
   print("$q / $w = $div2, остаток от деления $q на $w равен $remainder");
@@ -41,6 +41,7 @@ int sumNumbers(int a){ //через return
 }
 //лично мне на данном этапе удобнее делать void фукнции выводящую на экран сразу
 // и результат и текст, но для восприятия дублирую функцию в return
+//но можно будет делать функции через @override toString
 void sumNumbers2(int a){
   final firstNumber = a~/10;
   final secondNumber = a%10;
